@@ -9,8 +9,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "element-ui": "^2.13.2",
     "nuxt": "^2.14.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "less": "^3.12.2",
+    "less-loader": "^7.1.0",
+    "vant": "^2.11.2"
+  }
 }
