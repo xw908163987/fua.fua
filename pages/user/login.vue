@@ -1,7 +1,8 @@
 <template>
   <div class="login">
+    <div class="back" @click="$router.go(-1)"><img src="/public/back.png" alt="" /></div>
     <div class="logo-box">
-      <div class="logo"><span>LOGO</span></div>
+      <div class="logo"><img src="/public/logo.png" alt="" /></div>
     </div>
     <div class="input-group">
       <div class="username">
@@ -20,26 +21,39 @@
 </template>
 
 <script>
-export default {};
+export default {
+  layout: "login",
+};
 </script>
 
 <style lang="less" scoped>
 .login {
-  height: 100vh;
   background: #f5f5f5;
+  .back{
+      padding: 0.5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
   .logo-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+    padding: 4rem;
     .logo {
       width: 7rem;
       background: #fff;
       height: 7rem;
       border-radius: 50%;
+      padding: 1rem;
       overflow: hidden;
-      line-height: 7rem;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 30%;
+      }
     }
   }
   .input-group {
@@ -64,18 +78,20 @@ export default {};
     }
   }
   .btn-group {
+    margin-top: 2rem;
     .btn {
       width: 80%;
       border-radius: 1rem;
-      margin:1rem auto;
+      margin: 1rem auto;
     }
-    
+
     .submit {
       background: #fb8b8d;
       color: #fff;
     }
     .register {
       border: 1px solid #fb8b8d;
+      color: #fb8b8d;
     }
   }
 }

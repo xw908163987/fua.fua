@@ -60,5 +60,9 @@ export default {
   */
   build: {
     transpile: [/^vant/],
+  },
+  server: {
+    port: 8000, // default: 3000
+    host: '192.168.0.106' // default: localhost,
   }
 }
