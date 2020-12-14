@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Header />
     <Nuxt />
     <Tabbar />
@@ -8,6 +8,11 @@
 
 <script>
 export default {
+  methods:{
+    search(e){
+      console.log('123')
+    }
+  },
   mounted(){
     require('@/assets/fontAdaptation')
   }
