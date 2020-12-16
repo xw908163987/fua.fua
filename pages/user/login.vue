@@ -29,11 +29,12 @@ export default {
 <style lang="less" scoped>
 .login {
   background: #f5f5f5;
-  .back{
-      padding: 0.5rem;
-      position: absolute;
-      top: 0;
-      left: 0;
+  height: 100vh;
+  .back {
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   .logo-box {
     display: flex;
