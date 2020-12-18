@@ -28,6 +28,7 @@ export default {
   /*
   ** Global CSS
   */
+<<<<<<< HEAD
  css: [
   'vant/lib/index.css',
   '@/assets/reset.css'
@@ -39,6 +40,19 @@ export default {
 plugins: [
   '@/plugins/vant'
 ],
+=======
+  css: [
+    'vant/lib/index.css',
+    '@/assets/reset.css'
+  ],
+  /*
+  ** Plugins to load before mounting the App
+  ** https://nuxtjs.org/guide/plugins
+  */
+  plugins: [
+    '@/plugins/vant'
+  ],
+>>>>>>> a113d653bc5292d4717d51507cf81c516c53e023
   /*
   ** Auto import components
   ** See https://nuxtjs.org/api/configuration-components
@@ -60,9 +74,12 @@ plugins: [
   */
   build: {
     transpile: [/^vant/],
+<<<<<<< HEAD
   },
   generate:{
     devtools:true,
     subFolder: false,
+=======
+>>>>>>> a113d653bc5292d4717d51507cf81c516c53e023
   }
 }
