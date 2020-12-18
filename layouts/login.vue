@@ -5,7 +5,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  mounted() {
+    require("@/assets/reset.css");
+  },
+};
 </script>
 
 <style lang="less" scoped></style>
