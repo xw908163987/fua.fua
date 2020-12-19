@@ -9,14 +9,7 @@
 <script>
 export default {
   mounted() {
-    require("@/assets/reset.css");
+    require("@/assets/fontAdaptation.js");
   },
 };
 </script>
-
-<style lang="less" scoped>
-.container {
-  width: 100vw;
-  height: 100vh;
-}
-</style>

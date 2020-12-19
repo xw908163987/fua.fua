@@ -7,7 +7,7 @@
 <script>
 export default {
   mounted() {
-    require("@/assets/reset.css");
+    require("@/assets/fontAdaptation.js");
   },
 };
 </script>

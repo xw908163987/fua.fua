@@ -32,9 +32,10 @@ export default {
 
 <style lang="less" scoped>
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   .row {
-    position: sticky;
-    top: 0;
     width: 100%;
     height: 2.5rem;
     display: flex;

@@ -1,5 +1,9 @@
 <template>
-  <div class="more-shops">
+  <div class="nearby-shops">
+    <div class="header">
+      <div class="title">近く店舗</div>
+      <nuxt-link tag="div" to="/shop_center/moreShops" class="more">More</nuxt-link>
+    </div>
     <div class="list">
       <nuxt-link
         tag="div"
@@ -39,18 +43,28 @@
         </div>
       </nuxt-link>
     </div>
+    <div class="image">
+      <img src="/img2.jpg" alt="" />
+    </div>
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style lang="less" scoped>
-.more-shops {
+.nearby-shops {
+  width: 100%;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-weight: 600;
+    }
+    .more {
+      font-size: 0.8rem;
+      color: #9a9a9a;
+    }
+  }
   .list {
-    margin: 1rem;
-    padding-bottom: 3rem;
     .item {
       padding: 1rem 1rem 0 1rem;
       background: #fff;
@@ -117,6 +131,13 @@ export default {};
           font-weight: bold;
         }
       }
+    }
+  }
+  .image {
+    width: 90%;
+    margin: 1rem auto;
+    img {
+      width: 100%;
     }
   }
 }
