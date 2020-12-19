@@ -25,7 +25,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  asyncData({ redirect }) {
+    redirect("/home");
+  },
+};
 </script>
 
 <style>
