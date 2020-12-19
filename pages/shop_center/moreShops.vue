@@ -1,7 +1,13 @@
 <template>
   <div class="more-shops">
     <div class="list">
-      <div class="item" v-for="item in 3" :key="item">
+      <nuxt-link
+        tag="div"
+        class="item"
+        :to="{ path: '/shop_center/detail' }"
+        v-for="item in 3"
+        :key="item"
+      >
         <div class="imgs">
           <img src="/1607861641(1).jpg" alt="" />
           <img src="/1607861641(1).jpg" alt="" />
@@ -31,14 +37,13 @@
           </div>
           <div class="bottom">夕一术>·x二1一在晃为</div>
         </div>
-      </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style lang="less" scoped>
@@ -58,8 +63,8 @@ export default {
         border-radius: 1rem;
         overflow: hidden;
         img {
-          width: 8rem;
-          height: 8rem;
+          width: 9rem;
+          height: 9rem;
           border-radius: 1rem;
           overflow: hidden;
         }

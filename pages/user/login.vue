@@ -30,6 +30,7 @@ export default {
 .login {
   background: #f5f5f5;
   height: 100vh;
+  width: 100vw;
   .back {
     padding: 0.5rem;
     position: absolute;

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <Header />
     <Nuxt />
     <Tabbar />
@@ -13,3 +13,10 @@ export default {
   },
 };
 </script>
+
+<style lang="less" scoped>
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+</style>
