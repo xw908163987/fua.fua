@@ -37,7 +37,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '@/plugins/vant'
+    '@/plugins/vant',
+    '@/plugins/axios'
   ],
   /*
   ** Auto import components
@@ -53,7 +54,17 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
   ],
+  axios: {
+    proxy: true
+  },
+  /*
+   ** proxy
+   */
+  proxy: {
+    "/api": "http://localhost:3000"
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
@@ -61,8 +72,8 @@ export default {
   build: {
     transpile: [/^vant/],
   },
-  generate:{
-    devtools:true,
+  generate: {
+    devtools: true,
     subFolder: false,
   }
 }

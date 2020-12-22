@@ -21,7 +21,6 @@ export default {
     HotGirls,
   },
 };
-Swiper;
 </script>
 
 <style lang="less" scoped>
