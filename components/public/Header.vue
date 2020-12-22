@@ -9,19 +9,19 @@
       </div>
     </div>
     <div class="search" v-show="search">
-        <input type="text" placeholder="请输入关键字">
+      <input type="text" placeholder="请输入关键字" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-    props:{
-        search:{
-            type:Boolean,
-            default:false
-        }
+  props: {
+    search: {
+      type: Boolean,
+      default: false,
     },
+  },
   methods: {
     back() {
       this.$router.go(-1);
@@ -32,9 +32,10 @@ export default {
 
 <style lang="less" scoped>
 .header {
-  .row{
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  .row {
     width: 100%;
     height: 2.5rem;
     display: flex;
@@ -42,6 +43,7 @@ export default {
     align-items: center;
     padding: 0 1rem;
     background: #fff;
+    box-sizing: border-box;
     .back {
       width: 1.5rem;
       height: 1.5rem;
@@ -60,21 +62,20 @@ export default {
       }
     }
   }
-  .search{
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0.5rem 0;
-      input{
-          width: 90%;
-          background: #F2F2F2;
-          border-radius: 1rem;
-          padding: 0.25rem 0.5rem;
-          color: #9A9A9A;
-          font-size: 0.8rem;
-      }
-          
+  .search {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    input {
+      width: 90%;
+      background: #f2f2f2;
+      border-radius: 1rem;
+      padding: 0.25rem 0.5rem;
+      color: #9a9a9a;
+      font-size: 0.8rem;
+    }
   }
 }
 </style>

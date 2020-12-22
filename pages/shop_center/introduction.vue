@@ -21,31 +21,31 @@ export default {};
 
 <style lang="less" scoped>
 .introduction {
+  width: 90%;
+  margin: 1rem auto;
   .info {
-    margin: 1rem;
     background: #fff;
     border-radius: 1rem;
     overflow: hidden;
-  }
-  .image {
-    width: 100%;
-    img {
+    .image {
       width: 100%;
+      img {
+        width: 100%;
+      }
     }
-  }
-  .desc {
+    .desc {
       padding: 1rem;
-    .title {
-      width: 100%;
-      text-align: center;
-      font-weight: 600;
-      color: #000;
-      font-size: 1rem;
-      margin: 0 0 1rem 0;
-    }
-    p {
-      color: #6b6b6b;
-      
+      .title {
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        color: #000;
+        font-size: 1rem;
+        margin: 0 0 1rem 0;
+      }
+      p {
+        color: #6b6b6b;
+      }
     }
   }
 }
